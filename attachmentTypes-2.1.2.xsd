@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.1.2"
+    xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.1.2"
+    xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1"
+        schemaLocation="simpleTypes-2.2.1.xsd"/>
+
+    <xs:simpleType name="AttachmentIdSType">
+        <xs:annotation>
+            <xs:documentation>Тип Идентификатор прилагаемого файла</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:ID">
+            <xs:maxLength value="128"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="AttachmentIdRefSType">
+        <xs:annotation>
+            <xs:documentation>Тип Ссылка на прилагаемый файла по идентификатору</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:IDREF">
+            <xs:maxLength value="128"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="AttachmentFileType">
+        <xs:annotation>
+            <xs:documentation>Описание файла</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="fileURI" type="st:String128SType">
+                <xs:annotation>
+                    <xs:documentation>идентификатор файла (имя файла в архиве документа или пакета документов, либо идентификатор вложения в СМЭВ-конверте)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="md5sum" type="st:String128SType">
+                <xs:annotation>
+                    <xs:documentation>Хэш (по алгоритму MD5) от данных прикладываемого файла</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="fileName" type="st:String256SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>оригинальное имя файла</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AttachmentType">
+        <xs:annotation>
+            <xs:documentation>Приложенный файл с ЭП</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="id" type="tns:AttachmentIdSType">
+                <xs:annotation>
+                    <xs:documentation>Идентификатор прилагаемого вложения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="desc" type="st:String255SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Описание файла</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="file" type="tns:AttachmentFileType">
+                <xs:annotation>
+                    <xs:documentation>Атрибуты файла</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="signature" type="tns:AttachmentFileType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Атрибуты файлов электронных подписей</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AttachmentListType">
+        <xs:annotation>
+            <xs:documentation>Опись приложенных файлов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="attachment" type="tns:AttachmentType" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Приложенный файл</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AttachExtendedListType">
+        <xs:annotation>
+            <xs:documentation>Опись приложенных файлов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="attachExtended" type="tns:AttachExtendedType" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Приложенный файл</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AttachExtendedType">
+        <xs:annotation>
+            <xs:documentation>Приложенный файл с ЭП</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="id" type="tns:AttachmentIdSType">
+                <xs:annotation>
+                    <xs:documentation>Идентификатор прилагаемого вложения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="desc" type="st:String255SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Описание файла</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="file" type="tns:AttachmentFileType">
+                <xs:annotation>
+                    <xs:documentation>Атрибуты файла</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="signature" type="tns:AttachmentFileType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Атрибуты файлов электронных подписей</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="scale" type="st:String128SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Масштаб</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

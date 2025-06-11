@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1"
+           xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/complex/types/2.1.2"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/complex/types/2.1.2">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1" schemaLocation="simpleTypes-2.2.1.xsd"/>
+
+    <xs:group name="ExtRefGroup">
+        <xs:annotation>
+            <xs:documentation>Внешний идентификатор</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="sourceCode" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Код системы-источника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="recordId" type="st:LongIdentitySType">
+                <xs:annotation>
+                    <xs:documentation>Идентификатор записи</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date" type="st:DateTimeSType">
+                <xs:annotation>
+                    <xs:documentation>Дата присвоения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="IntRefGroup">
+        <xs:annotation>
+            <xs:documentation>Внутренний идентификатор</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="recordId" type="st:LongIdentitySType">
+                <xs:annotation>
+                    <xs:documentation>Идентификатор записи</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date" type="st:DateTimeSType">
+                <xs:annotation>
+                    <xs:documentation>Дата присвоения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="ExtNoRefGroup">
+        <xs:annotation>
+            <xs:documentation>Внешний номер</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="sourceCode" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Код системы-источника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="recordNo" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Номер записи</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date" type="st:DateTimeSType">
+                <xs:annotation>
+                    <xs:documentation>Дата присвоения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="IntNoRefGroup">
+        <xs:annotation>
+            <xs:documentation>Внутренний номер</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="recordNo" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Номер записи</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date" type="st:DateTimeSType">
+                <xs:annotation>
+                    <xs:documentation>Дата присвоения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    <xs:complexType name="PersonNameType">
+        <xs:annotation>
+            <xs:documentation>Тип ФИО по элементам</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="last" type="st:String60SType">
+                <xs:annotation>
+                    <xs:documentation>Фамилия</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="first" type="st:String60SType">
+                <xs:annotation>
+                    <xs:documentation>Имя</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="middle" type="st:String60SType">
+                <xs:annotation>
+                    <xs:documentation>Отчество</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

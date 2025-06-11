@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/degreeCleaning/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/degreeCleaning/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="DegreeCleaningKindEType">
+        <xs:annotation>
+            <xs:documentation>Состояние очистки от порубочных остатков и валежника</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="49000001">
+                <xs:annotation>
+                    <xs:documentation>Отсутствует (до 5 м3/га)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="49000002">
+                <xs:annotation>
+                    <xs:documentation>Слабая (5-20 м3/га)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="49000003">
+                <xs:annotation>
+                    <xs:documentation>Слабая (20-50 м3/га)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="49000004">
+                <xs:annotation>
+                    <xs:documentation>Сильная (более 50 м3/га)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

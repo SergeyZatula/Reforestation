@@ -1,0 +1,2044 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/documentType/types/2.1.7" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/documentType/types/2.1.7" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="DocumentTypeKindEType">
+        <xs:annotation>
+            <xs:documentation>Типы документов</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="46601002">
+                <xs:annotation>
+                    <xs:documentation>Аналитический обзор о состоянии лесов, их количественных и качественных характеристиках по субъекту РФ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601003">
+                <xs:annotation>
+                    <xs:documentation>Внесение сведений о составе и границах земель лесного фонда, составе земель иных категорий, на которых расположены леса на территории муниципального образования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601004">
+                <xs:annotation>
+                    <xs:documentation>Внесение сведений о составе и границах земель лесного фонда, составе земель иных категорий, на которых расположены леса на территории субъекта Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601005">
+                <xs:annotation>
+                    <xs:documentation>Выписка из ЕГРН о границе между субъектами Российской Федерации, границе муниципального образования и границе населенного пункта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601006">
+                <xs:annotation>
+                    <xs:documentation>Исправление реестровой ошибки в сведениях ГЛР об учете лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601007">
+                <xs:annotation>
+                    <xs:documentation>Исправление технической ошибки в сведениях ГЛР об учете лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601008">
+                <xs:annotation>
+                    <xs:documentation>Лесной план субъекта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601009">
+                <xs:annotation>
+                    <xs:documentation>Лесоустроительная документация</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601010">
+                <xs:annotation>
+                    <xs:documentation>Лесохозяйственный регламент лесничества</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601011">
+                <xs:annotation>
+                    <xs:documentation>Обращение заинтересованных лиц об исправлении реестровой ошибки в сведениях ГЛР об учете лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601012">
+                <xs:annotation>
+                    <xs:documentation>Отчетность об осуществлении переданных в соответствии с частью 1 статьи 83 ЛК РФ полномочий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601013">
+                <xs:annotation>
+                    <xs:documentation>Приказ о выделении особо защитных участков лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601014">
+                <xs:annotation>
+                    <xs:documentation>Приказ о создании лесничества на землях лесного фонда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601015">
+                <xs:annotation>
+                    <xs:documentation>Приказ о создании лесничества на землях населенных пунктов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601016">
+                <xs:annotation>
+                    <xs:documentation>Приказ о создании лесничества на землях обороны и безопасности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601017">
+                <xs:annotation>
+                    <xs:documentation>Приказ о создании лесничества на землях особо охраняемых природных территорий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601018">
+                <xs:annotation>
+                    <xs:documentation>Приказ о создании участкового лесничества на землях лесного фонда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601019">
+                <xs:annotation>
+                    <xs:documentation>Приказ о создании участкового лесничества на землях населенных пунктов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601020">
+                <xs:annotation>
+                    <xs:documentation>Приказ об изменении границ лесничества на землях лесного фонда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601021">
+                <xs:annotation>
+                    <xs:documentation>Приказ об изменении границ лесничества на землях населенных пунктов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601022">
+                <xs:annotation>
+                    <xs:documentation>Приказ об изменении границ лесничества на землях обороны и безопасности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601023">
+                <xs:annotation>
+                    <xs:documentation>Приказ об изменении границ лесничества на землях особо охраняемых природных территорий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601024">
+                <xs:annotation>
+                    <xs:documentation>Приказ об изменении границ участкового лесничества на землях лесного фонда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601025">
+                <xs:annotation>
+                    <xs:documentation>Приказ об изменении границ участкового лесничества на землях населенных пунктов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601026">
+                <xs:annotation>
+                    <xs:documentation>Приказ об отнесении лесов к защитным лесам и об установлении их границ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601027">
+                <xs:annotation>
+                    <xs:documentation>Приказ об отнесении лесов к эксплуатационным лесам и защитным лесам и установлении их границ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601028">
+                <xs:annotation>
+                    <xs:documentation>Приказ об отнесении лесов к эксплуатационным лесам и об установлении их границ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601029">
+                <xs:annotation>
+                    <xs:documentation>Приказ об упразднении лесничества на землях лесного фонда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601030">
+                <xs:annotation>
+                    <xs:documentation>Приказ об упразднении лесничества на землях населенных пунктов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601031">
+                <xs:annotation>
+                    <xs:documentation>Приказ об упразднении лесничества на землях обороны и безопасности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601032">
+                <xs:annotation>
+                    <xs:documentation>Приказ об упразднении лесничества на землях особо охраняемых природных территорий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601033">
+                <xs:annotation>
+                    <xs:documentation>Приказ об упразднении участкового лесничества на землях лесного фонда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601034">
+                <xs:annotation>
+                    <xs:documentation>Приказ об упразднении участкового лесничества на землях населенных пунктов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601035">
+                <xs:annotation>
+                    <xs:documentation>Приказ об установлении границ лесничества на землях лесного фонда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601036">
+                <xs:annotation>
+                    <xs:documentation>Приказ об установлении границ лесничества на землях населенных пунктов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601037">
+                <xs:annotation>
+                    <xs:documentation>Приказ об установлении границ лесничества на землях обороны и безопасности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601038">
+                <xs:annotation>
+                    <xs:documentation>Приказ об установлении границ лесничества на землях особо охраняемых природных территорий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601039">
+                <xs:annotation>
+                    <xs:documentation>Приказ об установлении границ участкового лесничества на землях лесного фонда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601040">
+                <xs:annotation>
+                    <xs:documentation>Приказ об установлении границ участкового лесничества на землях населенных пунктов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601041">
+                <xs:annotation>
+                    <xs:documentation>Проект лесничества</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601042">
+                <xs:annotation>
+                    <xs:documentation>Проект мероприятий по сохранению лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601043">
+                <xs:annotation>
+                    <xs:documentation>Проект эксплуатационных лесов, защитных лесов, резервных лесов, особо защитных участков лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601044">
+                <xs:annotation>
+                    <xs:documentation>Радиационное обследование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601045">
+                <xs:annotation>
+                    <xs:documentation>Разрешение на строительство, реконструкцию объектов капитального строительства в границах лесничеств</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601046">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение/приказ об отнесении лесов к зелёной, лесопарковой зоне</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601047">
+                <xs:annotation>
+                    <xs:documentation>Решение о выделении особо защитных участков лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601048">
+                <xs:annotation>
+                    <xs:documentation>Решение о переводе земель в иную категорию</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601049">
+                <xs:annotation>
+                    <xs:documentation>Решение об исключении лесов из состава защитных, эксплуатационных, резервных лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601050">
+                <xs:annotation>
+                    <xs:documentation>Решение об исключении лесов из состава категории защитных лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601051">
+                <xs:annotation>
+                    <xs:documentation>Решение об отнесении лесов к защитным, эксплуатационным, резервным лесам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601052">
+                <xs:annotation>
+                    <xs:documentation>Решение об отнесении лесов к категории защитных лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601053">
+                <xs:annotation>
+                    <xs:documentation>Решение об упразднении зеленой зоны, лесопарковой зоны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601054">
+                <xs:annotation>
+                    <xs:documentation>Решение об упразднении особо защитных участков лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601055">
+                <xs:annotation>
+                    <xs:documentation>Решение об установлении или изменении границ земель, на которых располагаются защитные, эксплуатационные, резервные леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601056">
+                <xs:annotation>
+                    <xs:documentation>Решение об установлении или изменении границ земель, на которых располагаются леса соответствующей категории защитных лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601057">
+                <xs:annotation>
+                    <xs:documentation>Решение об установлении или изменении границ земель, на которых располагаются особо защитные участки лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601058">
+                <xs:annotation>
+                    <xs:documentation>Решение ОГВ или ОМС о создании лесничеств</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601059">
+                <xs:annotation>
+                    <xs:documentation>Решение ОГВ или ОМС о создании участковых лесничеств</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601060">
+                <xs:annotation>
+                    <xs:documentation>Решение ОГВ или ОМС об упразднении участковых лесничеств</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601061">
+                <xs:annotation>
+                    <xs:documentation>Решение ОГВ или ОМС об установлении или изменении границ лесничеств</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601062">
+                <xs:annotation>
+                    <xs:documentation>Решение ОГВ или ОМС об установлении или изменении границы участкового лесничества</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601063">
+                <xs:annotation>
+                    <xs:documentation>Таксационное описание лесотаксационного выдела</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601064">
+                <xs:annotation>
+                    <xs:documentation>Выписка из ЕГРН о Лесничестве</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601065">
+                <xs:annotation>
+                    <xs:documentation>Опись вложенных файлов для внесения сведений в ЕГРН</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601066">
+                <xs:annotation>
+                    <xs:documentation>Заявление на внесение сведений в ЕГРН</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601067">
+                <xs:annotation>
+                    <xs:documentation>Сведения для внесения в ЕГРН в части сведений о границах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601068">
+                <xs:annotation>
+                    <xs:documentation>Письмо о проведении Государственной услуги</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601069">
+                <xs:annotation>
+                    <xs:documentation>Письмо в Минприроды России с приложением проекта Акта о переводе земель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601070">
+                <xs:annotation>
+                    <xs:documentation>Письмо в Минприроды России с приложением дополнительных материалов к проекту Акта о переводе земель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46601071">
+                <xs:annotation>
+                    <xs:documentation>Письмо в Минприроды России с приложением проекта Акта об отказе в Переводе земель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602001">
+                <xs:annotation>
+                    <xs:documentation>Акт предварительного осмотра лесосеки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602002">
+                <xs:annotation>
+                    <xs:documentation>Вступивший в законную силу судебный акт</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602003">
+                <xs:annotation>
+                    <xs:documentation>Выписка из ЕГРН о зоне с особыми условиями использования территорий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602004">
+                <xs:annotation>
+                    <xs:documentation>Выписка из ЕГРН о лесном участке</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602005">
+                <xs:annotation>
+                    <xs:documentation>Государственное задание</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602006">
+                <xs:annotation>
+                    <xs:documentation>Государственный контракт</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602007">
+                <xs:annotation>
+                    <xs:documentation>Договор аренды лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602008">
+                <xs:annotation>
+                    <xs:documentation>Договор безвозмездного пользования лесным участком</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602009">
+                <xs:annotation>
+                    <xs:documentation>Договор купли-продажи лесных насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602010">
+                <xs:annotation>
+                    <xs:documentation>Документ основание на исключение сведений об использовании лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602011">
+                <xs:annotation>
+                    <xs:documentation>Документ с изменениями для исключения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602012">
+                <xs:annotation>
+                    <xs:documentation>Документ с изменениями для ТО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602013">
+                <xs:annotation>
+                    <xs:documentation>Документ, являющийся основанием для внесения сведений в ГЛР, направленный в порядке информационного взаимодействия ФГИС ЛК с иными ИС в рамках соглашений об информационном взаимодействии</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602014">
+                <xs:annotation>
+                    <xs:documentation>Документ, являющийся основанием для внесения сведений в ГЛР, направленный способами и в порядке, предусмотренном порядком межведомственного информационного взаимодействия при ведении ГЛР, в том числе запрошенных оператором ФГИС ЛК по межведомственным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602015">
+                <xs:annotation>
+                    <xs:documentation>Документ, являющийся основанием для использования лесных участков</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602016">
+                <xs:annotation>
+                    <xs:documentation>Документ, являющийся основанием для создания лесосек</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602017">
+                <xs:annotation>
+                    <xs:documentation>Документ, являющийся основанием использования лесов без предоставления лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602018">
+                <xs:annotation>
+                    <xs:documentation>Заявление о заключении соглашения об установлении сервитута в отношении лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602019">
+                <xs:annotation>
+                    <xs:documentation>Иной документ использования лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602020">
+                <xs:annotation>
+                    <xs:documentation>Исправление технической ошибки в сведениях ГЛР использования лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602021">
+                <xs:annotation>
+                    <xs:documentation>Обращение заинтересованного лица об исправлении реестровой/технической ошибки использования лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602022">
+                <xs:annotation>
+                    <xs:documentation>Отчёт об использовании лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602023">
+                <xs:annotation>
+                    <xs:documentation>Охотохозяйственное соглашение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602024">
+                <xs:annotation>
+                    <xs:documentation>Право пользования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602025">
+                <xs:annotation>
+                    <xs:documentation>Проект освоения лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602026">
+                <xs:annotation>
+                    <xs:documentation>Проектная документация лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602027">
+                <xs:annotation>
+                    <xs:documentation>Разрешение на использование лесов в целях осуществления геологического изучения недр, разведки и добычи полезных ископаемых</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602028">
+                <xs:annotation>
+                    <xs:documentation>Разрешение на использование лесов для ведения сельского хозяйства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602029">
+                <xs:annotation>
+                    <xs:documentation>Разрешение на использование лесов для осуществления рыболовства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602030">
+                <xs:annotation>
+                    <xs:documentation>Разрешение на использование лесов для строительства, реконструкции, эксплуатации линейных объектов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602031">
+                <xs:annotation>
+                    <xs:documentation>Решение уполномоченного органа гос. власти или органа местного самоуправления в случае предоставления лесного участка в постоянное (бессрочное) пользование (в соответствии со статьями 81-84 ЛК РФ)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602032">
+                <xs:annotation>
+                    <xs:documentation>Свидетельство о Государственной регистрации права собственности в ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602033">
+                <xs:annotation>
+                    <xs:documentation>Соглашение об установлении публичного сервитута</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602034">
+                <xs:annotation>
+                    <xs:documentation>Соглашение об установлении сервитута</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602035">
+                <xs:annotation>
+                    <xs:documentation>Таксационное описание лесосеки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602036">
+                <xs:annotation>
+                    <xs:documentation>Материалы отвода и таксации лесосеки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602037">
+                <xs:annotation>
+                    <xs:documentation>Заявление о предоставлении в пределах земель лесного фонда лесного участка в безвозмездное пользование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602038">
+                <xs:annotation>
+                    <xs:documentation>Заявление о предоставлении в пределах земель лесного фонда лесного участка в постоянное (бессрочное) пользование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602039">
+                <xs:annotation>
+                    <xs:documentation>Заявление о предоставлении в аренду (без проведения торгов) лесного участка в границах земель лесного фонда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602040">
+                <xs:annotation>
+                    <xs:documentation>Ходатайство об установлении публичного сервитута в отношении лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602041">
+                <xs:annotation>
+                    <xs:documentation>Заявление о заключении договора купли-продажи лесных насаждений для собственных нужд</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602042">
+                <xs:annotation>
+                    <xs:documentation>Документ, на основании которого вносятся сведения о лесном участке, не состоящего на кадастровом учете</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603001">
+                <xs:annotation>
+                    <xs:documentation>Гражданско-правовой договор</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603002">
+                <xs:annotation>
+                    <xs:documentation>Документ основание на исключение сведений о проведенных мероприятиях по сохранению лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603003">
+                <xs:annotation>
+                    <xs:documentation>Документ с изменениями для РО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603004">
+                <xs:annotation>
+                    <xs:documentation>Дополнительное соглашение о внесении изменений в договор</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603005">
+                <xs:annotation>
+                    <xs:documentation>Исправление реестровой ошибки в сведениях о проведенных мероприятиях по сохранению лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603006">
+                <xs:annotation>
+                    <xs:documentation>Исправление технической ошибки в сведениях о проведенных мероприятиях по сохранению лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603007">
+                <xs:annotation>
+                    <xs:documentation>Обращение заинтересованных лиц об исправлении реестровой ошибки в сведениях ГЛР об охране, защите, воспроизводстве лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603008">
+                <xs:annotation>
+                    <xs:documentation>Отчет об анализе качества проведения и результативности мероприятий по сохранению лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603009">
+                <xs:annotation>
+                    <xs:documentation>Отчёт об охране лесов от загрязнения и иного негативного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603010">
+                <xs:annotation>
+                    <xs:documentation>Отчёт об охране лесов от пожаров</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603011">
+                <xs:annotation>
+                    <xs:documentation>Проект лесовосстановления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603012">
+                <xs:annotation>
+                    <xs:documentation>Проект лесоразведения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603013">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о согласовании проекта лесовосстановления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603014">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о согласовании проекта лесоразведения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603015">
+                <xs:annotation>
+                    <xs:documentation>Акт о лесном пожаре</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603016">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в согласовании проекта лесовосстановления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603017">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в согласовании проекта лесоразведения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603018">
+                <xs:annotation>
+                    <xs:documentation>Акт лесопатологического обследования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603019">
+                <xs:annotation>
+                    <xs:documentation>Сводный план тушения лесных пожаров</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46604001">
+                <xs:annotation>
+                    <xs:documentation>Отчёт о защите лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46605001">
+                <xs:annotation>
+                    <xs:documentation>Акт отнесения земель, предназначенных для лесовосстановления, к землям, на которых расположены леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46605002">
+                <xs:annotation>
+                    <xs:documentation>Рабочий проект создания объектов лесного семеноводства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46605003">
+                <xs:annotation>
+                    <xs:documentation>Решение комиссии по аттестации (списанию) объектов лесного семеноводства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46605004">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об утверждении акта лесопатологического обследования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46605005">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в утверждении акта лесопатологического обследования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46606001">
+                <xs:annotation>
+                    <xs:documentation>Декларация о сделках с древесиной в случае ее заключения в целях вывоза древесины и продукции ее переработки из РФ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46606002">
+                <xs:annotation>
+                    <xs:documentation>Документ-основание возникновения права собственности или иного законного основания владения складом древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46606003">
+                <xs:annotation>
+                    <xs:documentation>Копия договора о сделках с древесиной при их заключении в письменной форме</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46606004">
+                <xs:annotation>
+                    <xs:documentation>Сделка с древесиной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607001">
+                <xs:annotation>
+                    <xs:documentation>Отчет о ввезенной на склад или вывезенной со склада древесине</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607002">
+                <xs:annotation>
+                    <xs:documentation>Отчёт о воспроизводстве лесов и лесоразведении</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607003">
+                <xs:annotation>
+                    <xs:documentation>Отчет о древесине и продукции из нее</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607004">
+                <xs:annotation>
+                    <xs:documentation>Отчет о древесине, которая поступает на объект лесоперерабатывающей инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607005">
+                <xs:annotation>
+                    <xs:documentation>Электронный сопроводительный документ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607006">
+                <xs:annotation>
+                    <xs:documentation>Иной документ, на основании которого сведения о транспортировке внесены в государственный лесной реестр</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607007">
+                <xs:annotation>
+                    <xs:documentation>Иной документ, на основании которого сведения о сделке с древесиной и продукцией ее переработки внесены в государственный лесной реестр</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607008">
+                <xs:annotation>
+                    <xs:documentation>Ответ по виду сведений "Прием сведений об убытии древесины"</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607009">
+                <xs:annotation>
+                    <xs:documentation>Ответ по виду сведений "Прием декларации при вывозе древесины"</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607010">
+                <xs:annotation>
+                    <xs:documentation>Ответ по виду сведений "Прием отзыва декларации при вывозе древесины"</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607011">
+                <xs:annotation>
+                    <xs:documentation>Документ, в виде которого получены сведения о прибытии древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607012">
+                <xs:annotation>
+                    <xs:documentation>Документ, в виде которого получены сведения об убытии древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607013">
+                <xs:annotation>
+                    <xs:documentation>Декларация при вывозе древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607014">
+                <xs:annotation>
+                    <xs:documentation>Документ, в виде которого получены сведения об отзыве декларации при вывозе древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608001">
+                <xs:annotation>
+                    <xs:documentation>Документ-основание возникновения у владельцев объектов лесоперерабатывающей инфраструктуры права собственности или иного законного основания владения объектами лесоперерабатывающей инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608002">
+                <xs:annotation>
+                    <xs:documentation>Документ-основание возникновения у владельцев объектов, не связанных с созданием лесной инфраструктуры, права собственности или иного законного основания владения объектами, не связанными с созданием лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608004">
+                <xs:annotation>
+                    <xs:documentation>Акт о внесении сведений об объектах лесоперерабатывающей инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608005">
+                <xs:annotation>
+                    <xs:documentation>Акт о внесении сведений о местах (пунктах) складирования древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608006">
+                <xs:annotation>
+                    <xs:documentation>Акт о внесении сведений об объектах, не связанных с созданием лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608007">
+                <xs:annotation>
+                    <xs:documentation>Документ, в виде которого направляются сведения о планируемых к созданию лесных дорогах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608008">
+                <xs:annotation>
+                    <xs:documentation>Акт о внесении сведений о машинах и оборудовании, предназначенных для рубки лесных насаждений, вывоза из леса древесины и продукции ее переработки, лесосечных работ, транспортировки древесины и продукции ее переработки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608009">
+                <xs:annotation>
+                    <xs:documentation>Документ, в виде которого направляются сведения о созданных лесных дорогах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608010">
+                <xs:annotation>
+                    <xs:documentation>Акт внесения изменений в ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608011">
+                <xs:annotation>
+                    <xs:documentation>Выписка из ЕГРН об основных характеристиках и зарегистрированных правах на объект недвижимости</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608012">
+                <xs:annotation>
+                    <xs:documentation>Выписка из ЕГРН об объекте недвижимости</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608013">
+                <xs:annotation>
+                    <xs:documentation>Выписка из ЕГРН о переходе прав на объект недвижимости</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608014">
+                <xs:annotation>
+                    <xs:documentation>Исправление реестровой ошибки в сведениях ГЛР об объектах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608015">
+                <xs:annotation>
+                    <xs:documentation>Исправление реестровой ошибки в сведениях ГЛР о машинах и оборудовании</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608018">
+                <xs:annotation>
+                    <xs:documentation>Протокол загрузки ретроспективных данных из ЛесЕГАИС в реестр объектов и машин</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608019">
+                <xs:annotation>
+                    <xs:documentation>Акт о внесении изменений в сведения о машинах и оборудовании, предназначенных для рубки лесных насаждений, вывоза из леса древесины и продукции ее переработки, лесосечных работ, транспортировки древесины и продукции ее переработки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608020">
+                <xs:annotation>
+                    <xs:documentation>Акт о внесении изменений в сведения о местах (пунктах) складирования древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608021">
+                <xs:annotation>
+                    <xs:documentation>Акт о внесении изменений в сведения об объектах лесоперерабатывающей инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608022">
+                <xs:annotation>
+                    <xs:documentation>Акт о внесении изменений в сведения об объектах, не связанных с созданием лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608023">
+                <xs:annotation>
+                    <xs:documentation>Акт об исключении из ГЛР сведений об объектах лесоперерабатывающей инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608024">
+                <xs:annotation>
+                    <xs:documentation>Акт об исключении из ГЛР сведений о местах (пунктах) складирования древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608025">
+                <xs:annotation>
+                    <xs:documentation>Акт об исключении из ГЛР сведенийоб объектах, не связанных с созданием лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608026">
+                <xs:annotation>
+                    <xs:documentation>Акт об исключении из ГЛР сведений о машинах и оборудовании, предназначенных для рубки лесных насаждений, вывоза из леса древесины и продукции ее переработки, лесосечных работ, транспортировки древесины и продукции ее переработки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608027">
+                <xs:annotation>
+                    <xs:documentation>Акт об отказе внесения сведений в глр на основании выписки ЕГРН об основных характеристиках и зарегистрированных правах на объект недвижимости</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46608028">
+                <xs:annotation>
+                    <xs:documentation>Акт об отказе исправления реестровой ошибки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46611001">
+                <xs:annotation>
+                    <xs:documentation>Акт заключительного осмотра лесосеки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612001">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра о зеленой зоне</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612002">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра о лесничестве</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612003">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра о лесном квартале</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612004">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра о лесном участке</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612005">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра о лесопарковой зоне</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612006">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра о лесосеке</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612007">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра о лесотаксационном выделе</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612008">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра о месте (пункте) складирования древесины (складе древесины)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612009">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра о сделке с древесиной и продукцией ее переработки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612010">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра об использовании лесов без предоставления лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612011">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра об объекте лесоперерабатывающей инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612012">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра об объекте, не связанном с созданием лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612013">
+                <xs:annotation>
+                    <xs:documentation>Выписка из государственного лесного реестра об участковом лесничестве</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612014">
+                <xs:annotation>
+                    <xs:documentation>Выписка, предоставляемая в ином виде</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612015">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение об установлении сервитута (публичного сервитута)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612016">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение о предоставлении лесного участка в аренду без проведения торгов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612017">
+                <xs:annotation>
+                    <xs:documentation>Решение об отказе в предоставлении лесного участка в аренду без проведения торгов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612018">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение об утверждении проектной документации лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612019">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение об отказе в утверждении проектной документации лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612020">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение о предоставлении лесного участка в безвозмездное пользование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612021">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение об отказе в предоставлении лесного участка в безвозмездное пользование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612022">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение о предоставлении лесного участка в постоянное (бессрочное) пользование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612023">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение об отказе в предоставлении лесного участка в постоянное (бессрочное) пользование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612024">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение об отказе в установлении сервитута (публичного сервитута)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612025">
+                <xs:annotation>
+                    <xs:documentation>Приказ об утверждении положительного заключения экспертизы ПОЛ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612026">
+                <xs:annotation>
+                    <xs:documentation>Приказ об утверждении отрицательного заключения экспертизы ПОЛ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612027">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение о выдаче разрешения на выполнение работ по геологическому изучению недр</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612028">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение об отказе в выдаче разрешения на выполнение работ по геологическому изучению недр</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612029">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение о заключении договора купли-продажи лесных насаждений для собственных нужд</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612030">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение об отказе в заключении договора купли-продажи лесных насаждений для собственных нужд</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612031">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о невозможности проведения лесосечных работ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612032">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в приеме заявления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612033">
+                <xs:annotation>
+                    <xs:documentation>Соглашение о предоставлении аналитической информации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612034">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в предоставлении аналитической информации из государственного лесного реестра</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612035">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о согласовании проекта питомника</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612036">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в согласовании проекта питомника</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46612037">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о неподписании соглашения о предоставлении аналитической информации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613001">
+                <xs:annotation>
+                    <xs:documentation>Договор, по которому приобретается или отчуждается древесина и продукция ее переработки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613002">
+                <xs:annotation>
+                    <xs:documentation>Сведения о фактическом объеме полученной древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613003">
+                <xs:annotation>
+                    <xs:documentation>Документ, на основании которого сведения о лесном квартале внесены в ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613004">
+                <xs:annotation>
+                    <xs:documentation>Документ, на основании которого сведения о машинах и оборудовании, предназначенных для рубки лесных насаждений, вывоза из леса древесины и продукции ее переработки, лесосечных работ, транспортировки древесины и продукции ее переработки внесены в ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613005">
+                <xs:annotation>
+                    <xs:documentation>Документ, на основании которого сведения о партии транспортируемой древесины и продукции ее переработки внесены в ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613006">
+                <xs:annotation>
+                    <xs:documentation>Документ, на основании которого сведения о планируемых к созданию лесных дорогах внесены в ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613007">
+                <xs:annotation>
+                    <xs:documentation>Документ, на основании которого сведения о созданных лесных дорогах внесены в ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613008">
+                <xs:annotation>
+                    <xs:documentation>Документ, являющийся основанием для использования лесного участка, в том числе в рамках приоритетных инвестиционных проектов в области освоения лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613009">
+                <xs:annotation>
+                    <xs:documentation>Документ-основание для внесения в ГЛР сведений о загрязнении радионуклидами земель, на которых расположены леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613010">
+                <xs:annotation>
+                    <xs:documentation>Документ-основание для внесения в ГЛР сведений о мероприятиях, проектируемых при осуществлении мероприятий по лесоустройству</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613011">
+                <xs:annotation>
+                    <xs:documentation>Запрос о предоставлении сведений, содержащихся в государственном лесном реестре</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613012">
+                <xs:annotation>
+                    <xs:documentation>Запрос о предоставлении сведений, содержащихся в государственном лесном реестре (поданный в бумажном виде)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613013">
+                <xs:annotation>
+                    <xs:documentation>Исправление ро  сведениях ГЛР использования лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613014">
+                <xs:annotation>
+                    <xs:documentation>Исправление реестровой ошибки в сведениях ГЛР использования лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613015">
+                <xs:annotation>
+                    <xs:documentation>Лесная декларация</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613016">
+                <xs:annotation>
+                    <xs:documentation>Обращение заинтересованных лиц об исправлении технической ошибки в сведениях ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46613017">
+                <xs:annotation>
+                    <xs:documentation>Лесная декларация 6.0</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46614001">
+                <xs:annotation>
+                    <xs:documentation>Заявление о возврате платежа за предоставление сведений, содержащихся в государственном лесном реестре</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615001">
+                <xs:annotation>
+                    <xs:documentation>Извещение о выдаче выписки из ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615002">
+                <xs:annotation>
+                    <xs:documentation>Извещение о приеме лесной декларации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615003">
+                <xs:annotation>
+                    <xs:documentation>Извещение о приеме отчета о воспроизводстве лесов и лесоразведении</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615004">
+                <xs:annotation>
+                    <xs:documentation>Извещение о приеме отчета о защите лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615005">
+                <xs:annotation>
+                    <xs:documentation>Извещение о приеме отчета об использовании лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615006">
+                <xs:annotation>
+                    <xs:documentation>Извещение о приеме отчета об охране лесов от загрязнения и иного негативного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615007">
+                <xs:annotation>
+                    <xs:documentation>Извещение о приеме отчета об охране лесов от пожаров</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615008">
+                <xs:annotation>
+                    <xs:documentation>Извещение о принятии извещения об окончании лесосечных работ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615009">
+                <xs:annotation>
+                    <xs:documentation>Извещение о проведении осмотра лесосек</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615010">
+                <xs:annotation>
+                    <xs:documentation>Извещение об окончании лесосечных работ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615011">
+                <xs:annotation>
+                    <xs:documentation>Извещение об отказе в приеме документов, необходимых для предоставления услуги по приему лесных деклараций и отчетов от граждан, юридических лиц, осуществляющих использование лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615012">
+                <xs:annotation>
+                    <xs:documentation>Извещение об отказе в приеме документов, необходимых для размещения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615013">
+                <xs:annotation>
+                    <xs:documentation>Извещение об отказе в приеме отчета о воспроизводстве лесов и лесоразведении</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615014">
+                <xs:annotation>
+                    <xs:documentation>Извещение об отказе в приеме отчета о защите лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615015">
+                <xs:annotation>
+                    <xs:documentation>Извещение об отказе в приеме отчета об использовании лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615016">
+                <xs:annotation>
+                    <xs:documentation>Извещение об отказе в приеме отчета об охране лесов от загрязнения и иного негативного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615017">
+                <xs:annotation>
+                    <xs:documentation>Извещение об отказе в приеме отчета об охране лесов от пожаров</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615018">
+                <xs:annotation>
+                    <xs:documentation>Извещение об отказе в принятии извещения об окончании лесосечных работ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615019">
+                <xs:annotation>
+                    <xs:documentation>Извещение об отказе в приеме лесной декларации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615020">
+                <xs:annotation>
+                    <xs:documentation>Извещение о приеме таксационного описания лесосеки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615021">
+                <xs:annotation>
+                    <xs:documentation>Извещение об отказе в приеме таксационного описания лесосеки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615022">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о приеме таксационного описания лесосеки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615023">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в приеме таксационного описания лесосеки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616001">
+                <xs:annotation>
+                    <xs:documentation>Мотивированное уведомление об отсутствии выявленных нарушений при внесении информации в ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616002">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о внесении сведений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616003">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о выявленных нарушениях при внесении сведений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616004">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о выявленных нарушениях при размещении документов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616005">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о необоснованности выявленных нарушений при внесении сведений в ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616006">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о необоснованности выявленных нарушений при размещении документа в ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616007">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о приеме лесной декларации/отчета об использовании лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616008">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о размещении документа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616009">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об исправлении реестровой ошибки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616010">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об исправлении технической ошибки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616011">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в возврате платежа за предоставление сведений, содержащихся в государственном лесном реестре</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616012">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в исправлении реестровой ошибки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616013">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в исправлении технической ошибки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616014">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в предоставлении выписки из государственного лесного реестра</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616015">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в приеме документа к размещению</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616016">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в приеме документов, необходимых для выполнения возврата платежа от граждан, юридических лиц, внесших плату за предоставление сведений, содержащихся в государственном лесном реестре</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616017">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в приеме документов, необходимых для предоставления услуги по приему лесных деклараций и отчетов от граждан, юридических лиц, осуществляющих использование лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616018">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в приеме извещения об окончании лесосечных работ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616019">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в размещении документов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616020">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе во внесении сведений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616021">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отсутствии сведений в ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616022">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об ошибке при возврате платежа за предоставление сведений, содержащихся в государственном лесном реестре</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616023">
+                <xs:annotation>
+                    <xs:documentation>Уведомление  о размере платы за предоставление выписки из государственного лесного реестра</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616024">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в приеме лесной декларации/отчета об использовании лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46616025">
+                <xs:annotation>
+                    <xs:documentation>Результат предоставления аналитической информации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46620011">
+                <xs:annotation>
+                    <xs:documentation>Документ, на основании которого исключаются сведения об объектах лесоперерабатывающей инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46620012">
+                <xs:annotation>
+                    <xs:documentation>Документ, на основании которого исключаются сведения о местах (пунктах) складирования древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46620013">
+                <xs:annotation>
+                    <xs:documentation>Документ, на основании которого исключаются сведения об объектах, не связанных с созданием лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46620014">
+                <xs:annotation>
+                    <xs:documentation>Документ, на основании которого исключаются сведения о машинах и оборудовании</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46690001">
+                <xs:annotation>
+                    <xs:documentation>Иной документ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46691001">
+                <xs:annotation>
+                    <xs:documentation>Иной документ раздела I «Характеристики лесов и лесных ресурсов»</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46691002">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о внесении в ЕГРН сведений о лесничествах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46691003">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о внесении в ЕГРН сведений о лесничествах с описанием местоположения границ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46691004">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о внесении изменений в ЕГРН сведений о лесничествах с описанием местоположения границ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46691005">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о внесении в ЕГРН сведений о зонах с особыми условиями использования территорий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46691006">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об изменении в ЕГРН сведений о зонах с особыми условиями использования территорий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46691007">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об исключении в ЕГРН сведений о зонах с особыми условиями использования территорий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46691008">
+                <xs:annotation>
+                    <xs:documentation>Заявление о согласовании документации по планировке территории</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46691009">
+                <xs:annotation>
+                    <xs:documentation>Обращение о рассмотрении ходатайства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46691010">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об успешном отзыве документа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46692014">
+                <xs:annotation>
+                    <xs:documentation>Заявление о проведении государственной экспертизы проекта освоения лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46692015">
+                <xs:annotation>
+                    <xs:documentation>Выписка из ЕГРН на земельный участок, расположенный на землях сельскохозяйственного назначения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693014">
+                <xs:annotation>
+                    <xs:documentation>Заявление о выдаче разрешения на выполнение работ по геологическому изучению недр на землях лесного фонда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693015">
+                <xs:annotation>
+                    <xs:documentation>Проект лесного питомника</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693016">
+                <xs:annotation>
+                    <xs:documentation>Решение постоянно действующей комиссии по аттестации (списанию) объектов лесного семеноводства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693017">
+                <xs:annotation>
+                    <xs:documentation>Заявление об отзыве проекта освоения лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693018">
+                <xs:annotation>
+                    <xs:documentation>2-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693019">
+                <xs:annotation>
+                    <xs:documentation>3-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693020">
+                <xs:annotation>
+                    <xs:documentation>4-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693021">
+                <xs:annotation>
+                    <xs:documentation>5-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693022">
+                <xs:annotation>
+                    <xs:documentation>6-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693023">
+                <xs:annotation>
+                    <xs:documentation>7-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693024">
+                <xs:annotation>
+                    <xs:documentation>8-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693025">
+                <xs:annotation>
+                    <xs:documentation>9-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693026">
+                <xs:annotation>
+                    <xs:documentation>10-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693027">
+                <xs:annotation>
+                    <xs:documentation>11-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693028">
+                <xs:annotation>
+                    <xs:documentation>12-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693029">
+                <xs:annotation>
+                    <xs:documentation>13-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693030">
+                <xs:annotation>
+                    <xs:documentation>14-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693031">
+                <xs:annotation>
+                    <xs:documentation>15-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693032">
+                <xs:annotation>
+                    <xs:documentation>16-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693033">
+                <xs:annotation>
+                    <xs:documentation>17-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693034">
+                <xs:annotation>
+                    <xs:documentation>18-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693035">
+                <xs:annotation>
+                    <xs:documentation>18-ГЛР.Приложение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693036">
+                <xs:annotation>
+                    <xs:documentation>19-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693037">
+                <xs:annotation>
+                    <xs:documentation>1-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693038">
+                <xs:annotation>
+                    <xs:documentation>2-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693039">
+                <xs:annotation>
+                    <xs:documentation>3-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693040">
+                <xs:annotation>
+                    <xs:documentation>4-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693041">
+                <xs:annotation>
+                    <xs:documentation>5-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693042">
+                <xs:annotation>
+                    <xs:documentation>6-ОИП.I-VIII</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693043">
+                <xs:annotation>
+                    <xs:documentation>6-ОИП.1-5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693044">
+                <xs:annotation>
+                    <xs:documentation>7-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693045">
+                <xs:annotation>
+                    <xs:documentation>8-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693046">
+                <xs:annotation>
+                    <xs:documentation>9-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693047">
+                <xs:annotation>
+                    <xs:documentation>10-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693048">
+                <xs:annotation>
+                    <xs:documentation>11-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693049">
+                <xs:annotation>
+                    <xs:documentation>12-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693050">
+                <xs:annotation>
+                    <xs:documentation>13-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693051">
+                <xs:annotation>
+                    <xs:documentation>14-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693052">
+                <xs:annotation>
+                    <xs:documentation>15-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693053">
+                <xs:annotation>
+                    <xs:documentation>16-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693054">
+                <xs:annotation>
+                    <xs:documentation>17-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693055">
+                <xs:annotation>
+                    <xs:documentation>18-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693056">
+                <xs:annotation>
+                    <xs:documentation>1-ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693057">
+                <xs:annotation>
+                    <xs:documentation>Решение о проведении контрольно-надзорного мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693058">
+                <xs:annotation>
+                    <xs:documentation>Основание проведения мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693059">
+                <xs:annotation>
+                    <xs:documentation>Акт</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693060">
+                <xs:annotation>
+                    <xs:documentation>Документ, подтверждающий отнесение объекта контроля к категории риска</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693061">
+                <xs:annotation>
+                    <xs:documentation>Предостережение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693062">
+                <xs:annotation>
+                    <xs:documentation>Возражение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693063">
+                <xs:annotation>
+                    <xs:documentation>Документ по итогу контрольно-надзорного действия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693064">
+                <xs:annotation>
+                    <xs:documentation>Иные документы мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693065">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о размещении предписания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693066">
+                <xs:annotation>
+                    <xs:documentation>Положительное решение о возможности использования земельного участка для использования лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693067">
+                <xs:annotation>
+                    <xs:documentation>Решение о прекращении разрешения об использовании, охраны, защиты, воспроизводства лесов, расположенных на землях сельскохозяйственного назначения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693068">
+                <xs:annotation>
+                    <xs:documentation>Акт ревизии состояния лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693069">
+                <xs:annotation>
+                    <xs:documentation>Карта-схема</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693070">
+                <xs:annotation>
+                    <xs:documentation>Акт патрулирования лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693071">
+                <xs:annotation>
+                    <xs:documentation>План-график ревизии состояния лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693072">
+                <xs:annotation>
+                    <xs:documentation>Карта-схема</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693073">
+                <xs:annotation>
+                    <xs:documentation>План-график патрулирование лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693074">
+                <xs:annotation>
+                    <xs:documentation>План-график ревизии состояния лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693083">
+                <xs:annotation>
+                    <xs:documentation>План-график патрулирование лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693084">
+                <xs:annotation>
+                    <xs:documentation>Дополнительные документы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693085">
+                <xs:annotation>
+                    <xs:documentation>Документы по итогам контрольных (надзорных) действий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693086">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о размещении предписания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693087">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о направлении в Минприроды акта о переводе земель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693088">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о направлении в Минприроды акта об отказе в переводе земель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693089">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о согласовании документации по планировке территории</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693090">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в согласовании документации по планировке территории</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693091">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в предоставлении государственной услуги</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693092">
+                <xs:annotation>
+                    <xs:documentation>Уведомление об отказе в приеме документов по услугам согласование документации планировки и ходатайства о переводе земель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693093">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о возврате документа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693094">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о размере платы за предоставление аналитической информации из государственного лесного реестра</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693095">
+                <xs:annotation>
+                    <xs:documentation>Результирующий документ по принятому решению</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693096">
+                <xs:annotation>
+                    <xs:documentation>Результирующий документ по рассмотрению ходатайства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693097">
+                <xs:annotation>
+                    <xs:documentation>19-ОИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693098">
+                <xs:annotation>
+                    <xs:documentation>Результирующий документ по отказу</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693099">
+                <xs:annotation>
+                    <xs:documentation>Результирующий документ по запросу дополнительной информации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693100">
+                <xs:annotation>
+                    <xs:documentation>Результирующий документ по продлению срока рассмотрения жалобы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693101">
+                <xs:annotation>
+                    <xs:documentation>Анкета самообследования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693102">
+                <xs:annotation>
+                    <xs:documentation>Мотивированное представление инспектора</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693103">
+                <xs:annotation>
+                    <xs:documentation>Заявление о проведении государственной экспертизы внесения изменений в проект освоения лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693104">
+                <xs:annotation>
+                    <xs:documentation>Заявление о проведении повторной государственной экспертизы проекта освоения лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693105">
+                <xs:annotation>
+                    <xs:documentation>Файл, прикладываемый согласующим в ГосУслугах ПУЛа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693107">
+                <xs:annotation>
+                    <xs:documentation>Решение о проведении мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693108">
+                <xs:annotation>
+                    <xs:documentation>Заявка на реализацию инвестиционного проекта в целях развития лесного комплекса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693109">
+                <xs:annotation>
+                    <xs:documentation>Заявка на внесение изменений в инвестиционный проект</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693110">
+                <xs:annotation>
+                    <xs:documentation>Заявление о завершении приоритетного инвестиционного проекта в целях развития лесного комплекса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693111">
+                <xs:annotation>
+                    <xs:documentation>Отчет об исполнении поквартального графика реализации приоритетного инвестиционного проекта в целях развития лесного комплекса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693112">
+                <xs:annotation>
+                    <xs:documentation>Судебное решение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693113">
+                <xs:annotation>
+                    <xs:documentation>Заявка на включение в РНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693114">
+                <xs:annotation>
+                    <xs:documentation>Заявка на получение данных дистанционного зондирования из внешних информационных систем</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693115">
+                <xs:annotation>
+                    <xs:documentation>Решение о принятии мер по привлечению виновных лиц к установленной законом ответственности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693116">
+                <xs:annotation>
+                    <xs:documentation>Решение о принятии мер по недопущению причинения вреда (ущерба) охраняемым законом ценностям или прекращению его причинения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693117">
+                <xs:annotation>
+                    <xs:documentation>Решение о направлении в уполномоченные государственные органы информации о наличии признаков преступления или административного правонарушения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693118">
+                <xs:annotation>
+                    <xs:documentation>Меры по осуществлению контроля за устранением выявленных нарушений обязательных требований</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693119">
+                <xs:annotation>
+                    <xs:documentation>Рекомендации о соблюдении обязательных требований</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693120">
+                <xs:annotation>
+                    <xs:documentation>Решение о проведении профилактического мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693121">
+                <xs:annotation>
+                    <xs:documentation>Предписание об устранении выявленных нарушений  обязательных требований</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693122">
+                <xs:annotation>
+                    <xs:documentation>Предостережение о недопустимости нарушения обязательных требований</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693123">
+                <xs:annotation>
+                    <xs:documentation>Предписание об устранении выявленных нарушений по инвестиционному проекту</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693125">
+                <xs:annotation>
+                    <xs:documentation>Акт выездной проверки по инвестиционному проекту</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693127">
+                <xs:annotation>
+                    <xs:documentation>Решение об исключении инвестиционного проекта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693129">
+                <xs:annotation>
+                    <xs:documentation>Документ, на основании которого вносятся сведения о лесосеке</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693130">
+                <xs:annotation>
+                    <xs:documentation>Заявка на исключение из РНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46693131">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о возврате на доработку проекта освоения лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestAreas/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestAreas/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ForestAreasKindEType">
+        <xs:annotation>
+            <xs:documentation>Лесные районы</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="altaiNovosibirskRegionOfForest">
+                <xs:annotation>
+                    <xs:documentation>Алтае-Новосибирский район лесостепей и ленточных боров</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="altaiSayanMountainForestSteppe">
+                <xs:annotation>
+                    <xs:documentation>Алтае-Саянский горно-лесостепной район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="altaiSayanMountainTaigaRegion">
+                <xs:annotation>
+                    <xs:documentation>Алтае-Саянский горно-таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="amurPrimorskyConiferousBroadLe">
+                <xs:annotation>
+                    <xs:documentation>Приамурско-Приморский хвойно-широколиственный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="baikalMountainForestRegion">
+                <xs:annotation>
+                    <xs:documentation>Байкальский горный лесной район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="balticBelozerskyTaigaRegion">
+                <xs:annotation>
+                    <xs:documentation>Балтийско-Белозёрский таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="crimeanMountainDistrict">
+                <xs:annotation>
+                    <xs:documentation>Крымский горный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="dvinskoVychegodskyTaigaRegion">
+                <xs:annotation>
+                    <xs:documentation>Двинско-Вычегодский таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="eastSiberianRegionOfTundraFore">
+                <xs:annotation>
+                    <xs:documentation>Восточно-Сибирский район притундровых лесов и редкостойной тайги</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="eastSiberiansiberianTaigaPerma">
+                <xs:annotation>
+                    <xs:documentation>Восточно-Сибирский таёжный мерзлотный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="farEasternForestSteppeRegion">
+                <xs:annotation>
+                    <xs:documentation>Дальневосточный лесостепной район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="farEasternRegionOfTundraForest">
+                <xs:annotation>
+                    <xs:documentation>Дальневосточный район притундровых лесов и редкостойной тайги</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="farEasternTaigaRegion">
+                <xs:annotation>
+                    <xs:documentation>Дальневосточный таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="forestSteppeRegionOfTheEuropea">
+                <xs:annotation>
+                    <xs:documentation>Лесостепной район европейской части Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kamchatkaTaigaDistrict">
+                <xs:annotation>
+                    <xs:documentation>Камчатский таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="karelianNorthTaigaDistrict">
+                <xs:annotation>
+                    <xs:documentation>Карельский северо-таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="karelianTaigaDistrict">
+                <xs:annotation>
+                    <xs:documentation>Карельский таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="middleAngaraTaigaDistrict">
+                <xs:annotation>
+                    <xs:documentation>Среднеангарский таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="middleSiberianPlateauTaigaDist">
+                <xs:annotation>
+                    <xs:documentation>Среднесибирский плоскогорный таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="middleSiberianRegionOfTundraFo">
+                <xs:annotation>
+                    <xs:documentation>Среднесибирский район притундровых лесов и редкостойной тайги</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="middleSiberianSubtaigaForestSt">
+                <xs:annotation>
+                    <xs:documentation>Среднесибирский подтаёжно-лесостепной район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="middleUralTaigaDistrict">
+                <xs:annotation>
+                    <xs:documentation>Средне-Уральский таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="nizhneangarskyTaigaDistrict">
+                <xs:annotation>
+                    <xs:documentation>Нижнеангарский таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="northUralTaigaDistrict">
+                <xs:annotation>
+                    <xs:documentation>Северо-Уральский таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="southTaigaRegionOfTheEuropeanP">
+                <xs:annotation>
+                    <xs:documentation>Южно-таёжный район европейской части Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="southUralForestSteppeRegion">
+                <xs:annotation>
+                    <xs:documentation>Южно-Уральский лесостепной район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theAreaOfConiferousDeciduous(M">
+                <xs:annotation>
+                    <xs:documentation>Район хвойно-широколиственных (смешанных) лесов европейской части Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theAreaOfSemiDesertsAndDeserts">
+                <xs:annotation>
+                    <xs:documentation>Район полупустынь и пустынь европейской части Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theAreaOfSteppesOfTheEuropeanP">
+                <xs:annotation>
+                    <xs:documentation>Район степей европейской части Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theAreaOfTundraForestsAndRareC">
+                <xs:annotation>
+                    <xs:documentation>Район притундровых лесов и редкостойной тайги Европейско-Уральской части Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theNorthCaucasianMountainRegio">
+                <xs:annotation>
+                    <xs:documentation>Северо-Кавказский горный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theNorthTaigaRegionOfTheEurope">
+                <xs:annotation>
+                    <xs:documentation>Северо-таёжный район европейской части Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="verkhnelenskyTaigaRegion">
+                <xs:annotation>
+                    <xs:documentation>Верхнеленский таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="westSiberianMiddleTaigaPlainRe">
+                <xs:annotation>
+                    <xs:documentation>Западно-Сибирский средне-таёжный равнинный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="westSiberianNorthTaigaPlainReg">
+                <xs:annotation>
+                    <xs:documentation>Западно-Сибирский северо-таёжный равнинный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="westSiberianRegionOfTundraFore">
+                <xs:annotation>
+                    <xs:documentation>Западно-Сибирский район притундровых лесов и редкостойной тайги</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="westSiberianSouthTaigaPlainReg">
+                <xs:annotation>
+                    <xs:documentation>Западно-Сибирский южно-таёжный равнинный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="westSiberianSubtaigaForestStep">
+                <xs:annotation>
+                    <xs:documentation>Западно-Сибирский подтаёжно-лесостепной район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="westUralTaigaDistrict">
+                <xs:annotation>
+                    <xs:documentation>Западно-Уральский таёжный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zabaikalskyForestSteppeRegion">
+                <xs:annotation>
+                    <xs:documentation>Забайкальский лесостепной район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zabaikalskyMountainForestRegio">
+                <xs:annotation>
+                    <xs:documentation>Забайкальский горный лесной район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zabaikalskyMountainPermafrostR">
+                <xs:annotation>
+                    <xs:documentation>Забайкальский горно-мерзлотный район</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/pozvlForestReforestation/types/3.1.1"
+    targetNamespace="http://rosleshoz.gov.ru/fgis-lk/pozvlForestReforestation/types/3.1.1"
+    elementFormDefault="qualified"
+    xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1"
+    xmlns:sub="http://rosleshoz.gov.ru/fgis-lk/common/enums/constituentEntity/types/2.1.0"
+    xmlns:for="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestry/types/2.2.1"
+    xmlns:subfor="http://rosleshoz.gov.ru/fgis-lk/common/enums/districtForestries/types/2.1.3"
+    xmlns:rel="http://rosleshoz.gov.ru/fgis-lk/common/enums/relief/types/2.1.0"
+    xmlns:tr="http://rosleshoz.gov.ru/fgis-lk/common/enums/treeNew/types/2.1.4"
+    xmlns:seed="http://rosleshoz.gov.ru/fgis-lk/common/enums/seedQualityClass/types/2.1"
+    xmlns:attach="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.1.2"
+    xmlns:corsis="http://rosleshoz.gov.ru/fgis-lk/common/enums/coordinateSystem/types/2.2.0"
+    xmlns:complex="http://rosleshoz.gov.ru/fgis-lk/common/complex/types/2.1.2"
+    xmlns:avail="http://rosleshoz.gov.ru/fgis-lk/common/enums/availabilityCategory/types/2.1"
+    xmlns:condition="http://rosleshoz.gov.ru/fgis-lk/common/enums/conditionsProjectedMethod/types/2.1"
+    xmlns:place="http://rosleshoz.gov.ru/fgis-lk/common/enums/placement/types/2.1"
+    xmlns:tfor="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeForest/types/2.1.0"
+    xmlns:degreeClean="http://rosleshoz.gov.ru/fgis-lk/common/enums/degreeCleaning/types/2.1"
+    xmlns:degreeSodd="http://rosleshoz.gov.ru/fgis-lk/common/enums/degreeSodding/types/2.1"
+    xmlns:treePlac="http://rosleshoz.gov.ru/fgis-lk/common/enums/treePlacement/types/2.1"
+    xmlns:selCat="http://rosleshoz.gov.ru/fgis-lk/common/enums/selectionCategory/types/2.0.2"
+    xmlns:forArea="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestAreas/types/2.0"
+    xmlns:address="http://rosleshoz.gov.ru/fgis-lk/common/address/types/2.1.2"
+    xmlns:doctype="http://rosleshoz.gov.ru/fgis-lk/common/enums/documentType/types/2.1.7">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1"
+        schemaLocation="common3.2/simpleTypes-2.2.1.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/address/types/2.1.2"
+        schemaLocation="common3.2/addressTypes-2.1.2.xsd"/>
+    <xs:import
+        namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/constituentEntity/types/2.1.0"
+        schemaLocation="common3.2/dConstituentEntityKindTypes-2.1.0.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestry/types/2.2.1"
+        schemaLocation="common3.2/dForestryKindTypes-2.2.1.xsd"/>
+    <xs:import
+        namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/districtForestries/types/2.1.3"
+        schemaLocation="common3.2/dDistrictForestriesKindTypes-2.1.3.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/relief/types/2.1.0"
+        schemaLocation="common3.2/dReliefKindTypes-2.1.0.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/treeNew/types/2.1.4"
+        schemaLocation="common3.2/dTreeNewKindTypes-2.1.4.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/seedQualityClass/types/2.1"
+        schemaLocation="common3.2/dSeedQualityClassKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.1.2"
+        schemaLocation="common3.2/attachmentTypes-2.1.2.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/coordinateSystem/types/2.2.0"
+        schemaLocation="common3.2/dCoordinateSystemKindTypes-2.2.0.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/complex/types/2.1.2"
+        schemaLocation="common3.2/complexTypes-2.1.2.xsd"/>
+    <xs:import
+        namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/availabilityCategory/types/2.1"
+        schemaLocation="common3.2/dAvailabilityCategoryKindTypes.xsd"/>
+    <xs:import
+        namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/conditionsProjectedMethod/types/2.1"
+        schemaLocation="common3.2/dConditionsProjectedMethodKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/placement/types/2.1"
+        schemaLocation="common3.2/dPlacementKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/degreeCleaning/types/2.1"
+        schemaLocation="common3.2/dDegreeCleaningKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/degreeSodding/types/2.1"
+        schemaLocation="common3.2/dDegreeSoddingKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/treePlacement/types/2.1"
+        schemaLocation="common3.2/dTreePlacementKindTypes.xsd"/>
+    <xs:import
+        namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/selectionCategory/types/2.0.2"
+        schemaLocation="common3.2/dSelectionCategoryKindTypes-2.0.2.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestAreas/types/2.0"
+        schemaLocation="common3.2/dForestAreasKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeForest/types/2.1.0"
+        schemaLocation="common3.2/dTypeForestKindTypes-2.1.0.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/documentType/types/2.1.7"
+        schemaLocation="common3.2/dDocumentTypeKindTypes-2.1.7.xsd"/>
+
+    <xs:element name="forestReforestation" type="tns:ForestReforestationType">
+        <xs:annotation>
+            <xs:documentation>Проект лесовосстановления</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="ForestReforestationType">
+        <xs:annotation>
+            <xs:documentation>Проект лесовосстановления</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="serviceInfo" type="tns:ServiceInfoType" minOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Служебная информация услуги</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="header" type="tns:HeaderType">
+                <xs:annotation>
+                    <xs:documentation>Общие сведения о документе</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice>
+                <xs:element name="forest" type="tns:ForestComplexType">
+                    <xs:annotation>
+                        <xs:documentation>Информация о землях лесного фонда</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="agriculture" type="tns:AgriculComplexType">
+                    <xs:annotation>
+                        <xs:documentation>Информация о землях сельскохозяйственного назначения</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ServiceInfoType">
+        <xs:annotation>
+            <xs:documentation>Служебная информация услуги</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="provider" type="st:String1000SType">
+                <xs:annotation>
+                    <xs:documentation>Идентификатор информационной системы поставщика данных</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="guid" type="st:GuidSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Уникальный идентификатор документа в рамках информационной системы поставщика
+                        данных
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="HeaderType">
+        <xs:annotation>
+            <xs:documentation>Общие сведения о документе</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="documentInfo" type="tns:DocumentInfoType">
+                <xs:annotation>
+                    <xs:documentation>Документ-основание разработки проекта лесовосстановления</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="requisites" type="tns:RequisitesInfoType">
+                <xs:annotation>
+                    <xs:documentation>Реквизиты текущего документа</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="subject" type="sub:ConstituentEntityKindEType">
+                <xs:annotation>
+                    <xs:documentation>Субъект Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь участка, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="conditionsForestArea" type="tns:ConditionsForestAreaType">
+                <xs:annotation>
+                    <xs:documentation>Характеристика лесорастительных условий лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="conditionsAreasForestArea" type="st:String1000SType">
+                <xs:annotation>
+                    <xs:documentation>Характеристика площадей лесного/земельного участка</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="conditionsCutting" type="tns:ConditionsCuttingType">
+                <xs:annotation>
+                    <xs:documentation>Характеристика вырубки</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="conditionsUndergrowth" type="tns:ConditionsUndergrowthType"
+                minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Характеристика имеющихся подроста и молодняка</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="conditionsProjectedMethod"
+                type="condition:ConditionsProjectedMethodKindEType">
+                <xs:annotation>
+                    <xs:documentation>Проектируемый способ лесовосстановления</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="grounding" nillable="false" type="st:String4000SType">
+                <xs:annotation>
+                    <xs:documentation>Обоснование проектируемого способа лесовосстановления</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="timingTechnologiesReforestation" type="st:String4000SType">
+                <xs:annotation>
+                    <xs:documentation>Сроки и технологии лесовосстановления</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="timingTechnologiesAgrotechnicalCare" type="st:String4000SType">
+                <xs:annotation>
+                    <xs:documentation>Сроки и технологии по агротехническим уходам</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="timingTechnologiesSilviculturalCare" type="st:String4000SType">
+                <xs:annotation>
+                    <xs:documentation>Сроки и технологии по лесоводственным уходам</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="plantingMaterialRequirements"
+                type="tns:PlantingMaterialRequirementsType">
+                <xs:annotation>
+                    <xs:documentation>Требования к используемому для лесовосстановления посадочному (посевному) материалу</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="characteristicSowings"
+                type="tns:CharacteristicSowingsType">
+                <xs:annotation>
+                    <xs:documentation>Характеристика посевного материала</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="youngGrowthRequirements" type="tns:YoungGrowthRequirementsType"
+                minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Требования к молоднякам</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="reforestationArea" type="st:PositiveDecimalFourSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Объем работ по лесовосстановлению (площадь), га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="projectedScopeWork" type="tns:ProjectedScopeWorkType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Проектируемый объем работ по лесовосстановлению
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="performer" type="tns:SignerDataType">
+                <xs:annotation>
+                    <xs:documentation>Исполнитель работ по лесовосстановлению</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="attachments" type="attach:AttachmentListType">
+                <xs:annotation>
+                    <xs:documentation>Описание файлов вложений - материалы обследования, планы и прочее</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DocumentInfoType">
+        <xs:annotation>
+            <xs:documentation>Информация о документе</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="docType">
+                <xs:annotation>
+                    <xs:documentation>Вид документа</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="doctype:DocumentTypeKindEType">
+                        <xs:enumeration value="46602006"/>
+                        <xs:enumeration value="46602005"/>
+                        <xs:enumeration value="46602007"/>
+                        <xs:enumeration value="46602008"/>
+                        <xs:enumeration value="46602033"/>
+                        <xs:enumeration value="46602031"/>
+                        <xs:enumeration value="46602034"/>
+                        <xs:enumeration value="46603004"/>
+                        <xs:enumeration value="46602009"/>
+                        <xs:enumeration value="46693066"/>
+                    </xs:restriction>
+                </xs:simpleType>
+
+            </xs:element>
+            <xs:element name="number" type="st:String128SType">
+                <xs:annotation>
+                    <xs:documentation>Номер документа</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date" type="st:DateSType">
+                <xs:annotation>
+                    <xs:documentation>Дата документа</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RequisitesInfoType">
+        <xs:annotation>
+            <xs:documentation>Информация о документе</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="docType" type="doctype:DocumentTypeKindEType">
+                <xs:annotation>
+                    <xs:documentation>Вид документа</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="number" type="st:String128SType">
+                <xs:annotation>
+                    <xs:documentation>Номер документа</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date" type="st:DateSType">
+                <xs:annotation>
+                    <xs:documentation>Дата документа</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="period" type="tns:PeriodType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Период выполнения работ</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LocationType">
+        <xs:annotation>
+            <xs:documentation>Местоположение лесного участка,га</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="forestry" type="for:ForestryKindEType">
+                <xs:annotation>
+                    <xs:documentation>Наименование  и номер лесничества</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="steadForestry" type="subfor:DistrictForestriesKindEType">
+                <xs:annotation>
+                    <xs:documentation>Наименование  и номер участкового лесничества</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="tract" type="st:String255SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Наименование урочища</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="forestQuarteNo" type="st:String25SType">
+                <xs:annotation>
+                    <xs:documentation>N лесного квартала</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="compensationReforestation" type="st:BooleanSType">
+                <xs:annotation>
+                    <xs:documentation>Компенсационное лесовосстановление (true/компенсационное ЛВ, false/отсутсвует компенсационное ЛВ)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="taxationLocationType">
+        <xs:annotation>
+            <xs:documentation>Местоположение лесотаксационного выдела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="forestry" type="for:ForestryKindEType">
+                <xs:annotation>
+                    <xs:documentation>Наименование  и номер лесничества</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="steadForestry" type="subfor:DistrictForestriesKindEType">
+                <xs:annotation>
+                    <xs:documentation>Наименование  и номер участкового лесничества</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="tract" type="st:String255SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Наименование урочища</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="forestQuarteNo" type="st:String25SType">
+                <xs:annotation>
+                    <xs:documentation>N лесного квартала</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element maxOccurs="unbounded" name="taxationUnitInfo">
+                <xs:annotation>
+                    <xs:documentation>Информация о выделе и площадях</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="taxationUnit" type="st:String25SType">
+                            <xs:annotation>
+                                <xs:documentation>Участковый № лесотаксационного выдела</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="usageArea" type="st:PositiveDecimalFourSType"
+                            minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>Площадь эксплуатационная</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ObjectType">
+        <xs:sequence>
+            <xs:annotation>
+                <xs:documentation>Информация о неэксплуатационных площадях</xs:documentation>
+            </xs:annotation>
+            <xs:element name="name" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Тип объекта</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="nonUsageArea" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь неэксплуатационная</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="coordinateObject" type="tns:CoordinateType">
+                <xs:annotation>
+                    <xs:documentation>Координаты неэскплуатационных площадей</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ConditionsForestAreaType">
+        <xs:annotation>
+            <xs:documentation>Характеристика лесорастительных условий участка</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="relief" type="rel:ReliefKindEType">
+                <xs:annotation>
+                    <xs:documentation>Рельеф участка (уклон)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="hydrology" type="st:String128SType">
+                <xs:annotation>
+                    <xs:documentation>Гидрологические условия(увлажнение)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soil" type="st:String128SType">
+                <xs:annotation>
+                    <xs:documentation>Почва</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="forestType" type="tfor:TypeForestKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Тип леса</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ConditionsCuttingType">
+        <xs:annotation>
+            <xs:documentation>Характеристики вырубки</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="numberStumps" type="st:PositiveDecimalTwoSType">
+                <xs:annotation>
+                    <xs:documentation>Количество пней, тыс. штук/га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="treePlacement" type="treePlac:TreePlacementKindEType">
+                <xs:annotation>
+                    <xs:documentation>Характер и размещение оставленных деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="degreeSodding" type="degreeSodd:DegreeSoddingKindEType">
+                <xs:annotation>
+                    <xs:documentation>Степень задернения почвы</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="degreeMineralization" type="st:PositivePercentSType">
+                <xs:annotation>
+                    <xs:documentation>Степень минерализации почвы (% от площади лесного участка)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="degreeCleaning" type="degreeClean:DegreeCleaningKindEType">
+                <xs:annotation>
+                    <xs:documentation>Состояние очистки от порубочных остатков и валежника (захламленность, м.куб)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="availabilityCategory" type="avail:AvailabilityCategoryKindEType">
+                <xs:annotation>
+                    <xs:documentation>Категория доступности для техники</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ConditionsUndergrowthType">
+        <xs:annotation>
+            <xs:documentation>Характеристика имеющихся подроста и молодняка</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="treeComposition" type="st:String128SType">
+                <xs:annotation>
+                    <xs:documentation>Состав пород</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="averageAge" type="st:PositiveSType">
+                <xs:annotation>
+                    <xs:documentation>Средний возраст, лет</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="averageHeight" type="st:PositiveDecimalOneSType">
+                <xs:annotation>
+                    <xs:documentation>Средняя высота, м</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="numberTrees" type="st:PositiveDecimalOneSType">
+                <xs:annotation>
+                    <xs:documentation>Количество деревьев основных лесных древесных пород, тыс. штук/га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="placement" type="place:PlacementKindEType">
+                <xs:annotation>
+                    <xs:documentation>Размещение по площади лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="standCondition" type="st:String128SType">
+                <xs:annotation>
+                    <xs:documentation>Состояние лесных насаждений и их оценка</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PlantingMaterialRequirementsType">
+        <xs:annotation>
+            <xs:documentation>Требования к используемому для лесовосстановления посадочному (посевному) материалу</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="row" type="tns:PlantingMaterialRequirementsRowType"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Информация о требованиях к используемому для лесовосстановления посадочному (посевному) материалу</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PlantingMaterialRequirementsRowType">
+        <xs:annotation>
+            <xs:documentation>Информация о требованиях к используемому для лесовосстановления посадочному (посевному) материалу</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="tree" type="tr:TreeNewKindEType">
+                <xs:annotation>
+                    <xs:documentation>Порода</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="type" type="st:String1000SType">
+                <xs:annotation>
+                    <xs:documentation>Вид посадочного материала</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="age" type="st:String12SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Возраст, лет</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="height" type="st:PositiveSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Высота, см</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="diameter" type="st:PositiveDecimalTwoSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Диаметр корневой шейки, мм</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CharacteristicSowingsType">
+        <xs:annotation>
+            <xs:documentation>Характеристика посевного материала</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="row" type="tns:CharacteristicSowingsRowType" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Информация о характеристиках посевного материала</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CharacteristicSowingsRowType">
+        <xs:annotation>
+            <xs:documentation>Информация о характеристиках посевного материала</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="tree" type="tr:TreeNewKindEType">
+                <xs:annotation>
+                    <xs:documentation>Порода</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="seedQualityClass" minOccurs="0" type="seed:SeedQualityClassKindEType">
+                <xs:annotation>
+                    <xs:documentation>Класс качества семян</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="selectionCategory" type="selCat:SelectionCategoryKindEType"
+                minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Селекционная категория семян</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="locationOrigin" type="st:String1000SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Место происхождения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="YoungGrowthRequirementsType">
+        <xs:annotation>
+            <xs:documentation>Требования к молоднякам</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="row" type="tns:YoungGrowthRequirementsRowType" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Информация о требованиях к молоднякам</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="YoungGrowthRequirementsRowType">
+        <xs:annotation>
+            <xs:documentation>Информация о требованиях к молоднякам</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="tree" type="tr:TreeNewKindEType">
+                <xs:annotation>
+                    <xs:documentation>Порода</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="age" type="st:String12SType">
+                <xs:annotation>
+                    <xs:documentation>Возраст, лет</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="numberTrees" type="st:PositiveDecimalTwoSType">
+                <xs:annotation>
+                    <xs:documentation>Количество деревьев основных лесных пород, тыс. штук/га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="averageHeight" type="st:PositiveDecimalOneSType">
+                <xs:annotation>
+                    <xs:documentation>Средняя высота, м</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ProjectedScopeWorkType">
+        <xs:annotation>
+            <xs:documentation>Проектируемый объем работ по лесовосстановлению
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь лесовосстановления, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="numberTrees" type="st:PositiveDecimalTwoSType">
+                <xs:annotation>
+                    <xs:documentation>Количество жизнеспособных деревьев основных лесных древесных пород, тыс. штук/га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="totalNumberTrees" type="st:PositiveDecimalTwoSType">
+                <xs:annotation>
+                    <xs:documentation>Количество жизнеспособных деревьев основных лесных древесных пород на всей площади, тыс. штук</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LocationInformationRowType">
+        <xs:annotation>
+            <xs:documentation>Таблица "Сведения о расположении объектов"</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="location" type="tns:taxationLocationType">
+                <xs:annotation>
+                    <xs:documentation>Местоположение</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="objectNumber" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Номер объекта</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="overallArea" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Общая площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="scale" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Масштаб</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="fileID" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Идентификатор вложения изображения схемы расположения лесосек или объектов инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="coordinate" type="tns:CoordinateInfoType">
+                <xs:annotation>
+                    <xs:documentation>Координаты</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LocationInformationType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="row" type="tns:LocationInformationRowType">
+                <xs:annotation>
+                    <xs:documentation>Таблица "Сведения о расположении объектов"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CoordinateInfoType">
+        <xs:annotation>
+            <xs:documentation>Информация о координатах</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="coordinatesForestArea" type="tns:CoordinateType">
+                <xs:annotation>
+                    <xs:documentation>Координаты участка леса</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="object" type="tns:ObjectType">
+                <xs:annotation>
+                    <xs:documentation>Информация о неэксплуатационных площадях</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CoordinateType">
+        <xs:annotation>
+            <xs:documentation>Координаты</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CsCode" type="corsis:CoordinateSystemKindEType">
+                <xs:annotation>
+                    <xs:documentation>Системы координат ведения пространственных данных ГЛР</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="binding" minOccurs="0" type="tns:BindingType">
+                <xs:annotation>
+                    <xs:documentation>Привязка объекта</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="explication" type="tns:ExplicationType">
+                <xs:annotation>
+                    <xs:documentation>Экспликация объекта</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="BindingType">
+        <xs:annotation>
+            <xs:documentation>Привязка объекта</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="row" type="tns:ExplicationRowType">
+                <xs:annotation>
+                    <xs:documentation>Информация о координатах</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ExplicationType">
+        <xs:annotation>
+            <xs:documentation>Экспликация объекта</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="row" type="tns:ExplicationRowType">
+                <xs:annotation>
+                    <xs:documentation>Информация о координатах</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ExplicationRowType">
+        <xs:annotation>
+            <xs:documentation>Информация о координатах</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="numberPoint" type="st:String8SType">
+                <xs:annotation>
+                    <xs:documentation>Номер точки</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="longitude" type="xs:float">
+                <xs:annotation>
+                    <xs:documentation>Долгота (X)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="latitude" type="xs:float">
+                <xs:annotation>
+                    <xs:documentation>Широта (Y)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SignerDataType">
+        <xs:annotation>
+            <xs:documentation>Данные подписи исполнителя работ по лесовосстановлению</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="employee" type="tns:EmployeeType">
+                <xs:annotation>
+                    <xs:documentation>Данные сотрудника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date" type="st:DateSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Дата составления/подписания документа</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EmployeeType">
+        <xs:annotation>
+            <xs:documentation>Данные исполнителя работ</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="fullName" type="complex:PersonNameType">
+                <xs:annotation>
+                    <xs:documentation>Фамилия, имя, отчество</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="post" type="st:String255SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Должность</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="basisAuthority" type="st:String255SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Основание для полномочий</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="number" type="st:String255SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Номер документа основания полномочий</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="date" type="st:DateSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Дата документа основания полномочий</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="phone" type="st:String255SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Телефон</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="organization" type="st:String255SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Организация</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PeriodType">
+        <xs:annotation>
+            <xs:documentation>Период выполнения работ</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="dataStart" type="st:DateSType">
+                <xs:annotation>
+                    <xs:documentation>Дата начала</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="dateEnd" type="st:DateSType">
+                <xs:annotation>
+                    <xs:documentation>Дата окончания</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ForestComplexType">
+        <xs:annotation>
+            <xs:documentation>Информация о землях лесного фонда</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="location" type="tns:LocationType">
+                <xs:annotation>
+                    <xs:documentation>Местоположение лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="forestArea" type="forArea:ForestAreasKindEType">
+                <xs:annotation>
+                    <xs:documentation>Лесной район</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="locationInformation" type="tns:LocationInformationType">
+                <xs:annotation>
+                    <xs:documentation>Таблица "Сведения о расположении объектов"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AgriculComplexType">
+        <xs:annotation>
+            <xs:documentation>Информация о землях сельскохозяйственного назначения</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="municipalDistrict" type="address:OktmoSType">
+                <xs:annotation>
+                    <xs:documentation>Муниципальный район</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="locationInformation" type="tns:LocationInformation2Type">
+                <xs:annotation>
+                    <xs:documentation>Таблица "Сведения о расположении объектов"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LocationInformation2RowType">
+        <xs:annotation>
+            <xs:documentation>Таблица "Сведения о расположении объектов"</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="cadastralNumber" type="st:String25SType">
+                <xs:annotation>
+                    <xs:documentation>Кадастровый номер</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="objectNumber" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Номер объекта</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="overallArea" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Общая площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="usageArea" type="st:PositiveDecimalFourSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Площадь эксплуатационная</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="scale" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Масштаб</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="fileID" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Идентификатор вложения изображения схемы расположения лесосек или объектов инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="coordinate" type="tns:CoordinateInfoType">
+                <xs:annotation>
+                    <xs:documentation>Координаты</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LocationInformation2Type">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="row" type="tns:LocationInformation2RowType"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/availabilityCategory/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/availabilityCategory/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="AvailabilityCategoryKindEType">
+        <xs:annotation>
+            <xs:documentation>Категория доступности для техники</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="48700001">
+                <xs:annotation>
+                    <xs:documentation>Доступная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="48700002">
+                <xs:annotation>
+                    <xs:documentation>Требуется узкополосная расчистка без корчёвки пней</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="48700003">
+                <xs:annotation>
+                    <xs:documentation>Требуется узкополосная расчистка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="48700004">
+                <xs:annotation>
+                    <xs:documentation>Требуется широкополосная расчистка с корчевкой пней</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

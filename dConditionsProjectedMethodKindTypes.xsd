@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/conditionsProjectedMethod/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/conditionsProjectedMethod/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ConditionsProjectedMethodKindEType">
+        <xs:annotation>
+            <xs:documentation>Проектируемый способ лесовосстановления</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="48800001">
+                <xs:annotation>
+                    <xs:documentation>Естественное лесовосстановление </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="48800002">
+                <xs:annotation>
+                    <xs:documentation>Искусственное лесовосстановление</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="48800003">
+                <xs:annotation>
+                    <xs:documentation>Комбинированное лесовосстановление (посев, посадка)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

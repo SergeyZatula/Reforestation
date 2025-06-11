@@ -1,0 +1,1654 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/coordinateSystem/types/2.2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/coordinateSystem/types/2.2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="CoordinateSystemKindEType">
+        <xs:annotation>
+            <xs:documentation>Системы координат ведения пространственных данных ГЛР</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="900000">
+                <xs:annotation>
+                    <xs:documentation>Всемирная Геодезическая система координат</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="asiaNorthAlbersEqualAreaConic">
+                <xs:annotation>
+                    <xs:documentation>Asia_North_Albers_Equal_Area_Conic (ESRI:102025)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="equidistantConicforNorthAsia">
+                <xs:annotation>
+                    <xs:documentation>Equidistant_Conic_for_Northern_Asia (ESRI:102026)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="gsk2011Epsg7681">
+                <xs:annotation>
+                    <xs:documentation>GSK-2011 (EPSG:7681)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk02Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-02, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk02Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-02, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk03Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-03, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk03Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-03, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk03Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-03, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk03Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-03, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk03Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-03, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk03Zona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-03, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk03Zona7">
+                <xs:annotation>
+                    <xs:documentation>МСК-03, зона 7</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk04Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-04, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk04Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-04, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk05.1">
+                <xs:annotation>
+                    <xs:documentation>МСК-05</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk05Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-05, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk06">
+                <xs:annotation>
+                    <xs:documentation>МСК-06</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk06Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-06, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk07">
+                <xs:annotation>
+                    <xs:documentation>МСК-07</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk07Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-07, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk08Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-08, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk08Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-08, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk08Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-08, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk08Zona51">
+                <xs:annotation>
+                    <xs:documentation>МСК-08, зона 51</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk08Zona52">
+                <xs:annotation>
+                    <xs:documentation>МСК-08, зона 52</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk09">
+                <xs:annotation>
+                    <xs:documentation>МСК-09</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk09Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-09, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk10Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-10, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk10Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-10, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk11Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-11, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk11Zona10">
+                <xs:annotation>
+                    <xs:documentation>МСК-11, зона 10</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk11Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-11, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk11Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-11, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk11Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-11, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk11Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-11, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk11Zona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-11, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk11Zona7">
+                <xs:annotation>
+                    <xs:documentation>МСК-11, зона 7</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk11Zona8">
+                <xs:annotation>
+                    <xs:documentation>МСК-11, зона 8</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk11Zona9">
+                <xs:annotation>
+                    <xs:documentation>МСК-11, зона 9</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk12Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-12, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk12Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-12, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk13Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-13, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk13Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-13, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk14Zona1.1">
+                <xs:annotation>
+                    <xs:documentation>МСК-14, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk14Zona10">
+                <xs:annotation>
+                    <xs:documentation>МСК-14, зона 10</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk14Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-14, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk14Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-14, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk14Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-14, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk14Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-14, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk14Zona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-14, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk14Zona7">
+                <xs:annotation>
+                    <xs:documentation>МСК-14, зона 7</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk14Zona8">
+                <xs:annotation>
+                    <xs:documentation>МСК-14, зона 8</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk14Zona9">
+                <xs:annotation>
+                    <xs:documentation>МСК-14, зона 9</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk15Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-15, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk163Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-163, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk164Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-164, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk165Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-165, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk166Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-166, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk167Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-167, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk168Zona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-168, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk169Zona7">
+                <xs:annotation>
+                    <xs:documentation>МСК-169, зона 7</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk16Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-16, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk16Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-16, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk16Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-16, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk170Zona8">
+                <xs:annotation>
+                    <xs:documentation>МСК-170, зона 8</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk18Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-18, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk18Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-18, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk19Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-19, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk20Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-20, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk20Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-20, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk21Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-21, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk21Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-21, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk22Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-22, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk22Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-22, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk22Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-22, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk23Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-23, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk23Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-23, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk24Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-24, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk24Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-24, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk24Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-24, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk24Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-24, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk24Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-24, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk24Zona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-24, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk24Zona7">
+                <xs:annotation>
+                    <xs:documentation>МСК-24, зона 7</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk25Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-25, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk25Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-25, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk25Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-25, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk25Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-25, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk26Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-26, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk26Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-26, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk27Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-27, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk27Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-27, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk27Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-27, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk27Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-27, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk27Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-27, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk27Zona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-27, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk28Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-28, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk28Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-28, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk28Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-28, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk28Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-28, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk28Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-28, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk29Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-29, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk29Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-29, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk29Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-29, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk29Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-29, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk29Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-29, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk29Zona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-29, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk30Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-30, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk30Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-30, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk31Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-31, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk31Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-31, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk32Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-32, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk32Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-32, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk33Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-33, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk33Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-33, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk33Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-33, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk34Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-34, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk34Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-34, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk34Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-34, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk35Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-35, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk35Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-35, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk35Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-35, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk35Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-35, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk35Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-35, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk36Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-36, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk36Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-36, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk37Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-37, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk37Zona2.1">
+                <xs:annotation>
+                    <xs:documentation>МСК-37, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk37Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-37, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk38Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-38, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk38Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-38, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk38Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-38, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk38Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-38, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk38Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-38, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk38Zona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-38, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk38Zona7">
+                <xs:annotation>
+                    <xs:documentation>МСК-38, зона 7</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk38Zona8">
+                <xs:annotation>
+                    <xs:documentation>МСК-38, зона 8</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk39Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-39, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk40Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-40, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk41Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-41, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk41Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-41, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk41Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-41, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk42Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-42, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk42Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-42, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk42Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-42, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk43Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-43, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk43Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-43, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk43Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-43, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk44Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-44, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk44Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-44, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk44Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-44, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk45Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-45, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk45Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-45, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk45Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-45, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk46Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-46, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk46Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-46, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk47Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-47, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk47Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-47, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk47Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-47, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk48Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-48, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk48Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-48, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk49Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-49, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk49Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-49, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk49Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-49, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk49Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-49, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk50Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-50, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk50Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-50, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk51Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-51, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk51Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-51, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk52Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-52, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk52Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-52, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk52Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-52, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk53Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-53, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk53Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-53, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk53Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-53, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk54Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-54, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk54Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-54, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk54Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-54, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk54Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-54, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk55Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-55, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk55Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-55, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk56Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-56, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk56Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-56, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk56Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-56, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk56Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-56, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk57Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-57, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk57Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-57, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk57Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-57, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk58Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-58, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk58Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-58, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk59Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-59, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk59Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-59, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk59Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-59, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk60Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-60, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk60Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-60, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk60Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-60, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk61Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-61, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk61Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-61, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk61Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-61, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk62Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-62, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk62Zona1.1">
+                <xs:annotation>
+                    <xs:documentation>МСК-62, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk62Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-62, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk63Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-63, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk63Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-63, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk63Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-63, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk63Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-63, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk64Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-64, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk64Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-64, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk64Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-64, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk65">
+                <xs:annotation>
+                    <xs:documentation>МСК-65</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk65Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-65, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk65Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-65, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk65Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-65, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk65Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-65, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk65Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-65, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk65Zona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-65, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk65Zona7">
+                <xs:annotation>
+                    <xs:documentation>МСК-65, зона 7</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk65Zona8">
+                <xs:annotation>
+                    <xs:documentation>МСК-65, зона 8</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk65Zona9">
+                <xs:annotation>
+                    <xs:documentation>МСК-65, зона 9</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk66Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-66, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk66Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-66, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk66Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-66, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk67Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-67, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk67Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-67, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk67Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-67, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk68Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-68, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk68Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-68, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk68Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-68, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk69Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-69, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk69Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-69, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk69Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-69, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk70Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-70, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk70Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-70, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk70Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-70, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk70Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-70, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk70Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-70, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk70Zona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-70, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk71Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-71, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk71Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-71, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk72Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-72 (МСК-ТО), зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk72Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-72 (МСК-ТО), зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk72Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-72 (МСК-ТО), зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk72Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-72 (МСК-ТО), зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk72Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-72 (МСК-ТО), зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk73Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-73, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk73Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-73, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk74Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-74, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk74Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-74, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk74Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-74, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk75">
+                <xs:annotation>
+                    <xs:documentation>МСК-75</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk75Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-75, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk75Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-75, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk75Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-75, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk75Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-75, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk75Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-75, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk76Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-76, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk76Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-76, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk77Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-77, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk78Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-78, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk82Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-82, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk82Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-82, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk82Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-82, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk83Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-83, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk83Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-83, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk83Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-83, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk83Zona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-83, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk83Zona7">
+                <xs:annotation>
+                    <xs:documentation>МСК-83, зона 7</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk84Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-84, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk84Zona10">
+                <xs:annotation>
+                    <xs:documentation>МСК-84, зона 10</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk84Zona11">
+                <xs:annotation>
+                    <xs:documentation>МСК-84, зона 11</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk84Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-84, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk84Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-84, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk84Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-84, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk84Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-84, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk84Zona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-84, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk84Zona7">
+                <xs:annotation>
+                    <xs:documentation>МСК-84, зона 7</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk84Zona8">
+                <xs:annotation>
+                    <xs:documentation>МСК-84, зона 8</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk84Zona9">
+                <xs:annotation>
+                    <xs:documentation>МСК-84, зона 9</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk86Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-86, Зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk86Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-86, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk86Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-86, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk86Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-86, Зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk86Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-86, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk87Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-87, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk87Zona4">
+                <xs:annotation>
+                    <xs:documentation>мск-87, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk87Zona5">
+                <xs:annotation>
+                    <xs:documentation>мск-87, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk87Zona6">
+                <xs:annotation>
+                    <xs:documentation>мск-87, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk87Zona7">
+                <xs:annotation>
+                    <xs:documentation>мск-87, зона 7</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk87Zona8">
+                <xs:annotation>
+                    <xs:documentation>мск-87, зона 8</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk88Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-88, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk88Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-88, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk88Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-88, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk88Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-88, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk88Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-88, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk89Zona1">
+                <xs:annotation>
+                    <xs:documentation>МСК-89, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk89Zona2">
+                <xs:annotation>
+                    <xs:documentation>МСК-89, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk89Zona3">
+                <xs:annotation>
+                    <xs:documentation>МСК-89, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk89Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-89, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk89Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-89, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk90Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-90, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk90Zona5">
+                <xs:annotation>
+                    <xs:documentation>МСК-90, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="msk91Zona4">
+                <xs:annotation>
+                    <xs:documentation>МСК-91, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mskToZona6">
+                <xs:annotation>
+                    <xs:documentation>МСК-72 (МСК-ТО), зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtD3zone1">
+                <xs:annotation>
+                    <xs:documentation>1963_D3 зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtD3zone2">
+                <xs:annotation>
+                    <xs:documentation>1963_D3 зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtD3zone3">
+                <xs:annotation>
+                    <xs:documentation>1963_D3 зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtD3zone4">
+                <xs:annotation>
+                    <xs:documentation>1963_D3 зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtD3zone5">
+                <xs:annotation>
+                    <xs:documentation>1963_D3 зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtD3zone6">
+                <xs:annotation>
+                    <xs:documentation>1963_D3 зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtD3zone7">
+                <xs:annotation>
+                    <xs:documentation>1963_D3 зона 7</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtD3zone8">
+                <xs:annotation>
+                    <xs:documentation>1963_D3 зона 8</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtQ6zone1">
+                <xs:annotation>
+                    <xs:documentation>1963_Q6 зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtQ6zone2">
+                <xs:annotation>
+                    <xs:documentation>1963_Q6 зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtQ6zone3">
+                <xs:annotation>
+                    <xs:documentation>1963_Q6 зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtQ6zone4">
+                <xs:annotation>
+                    <xs:documentation>1963_Q6 зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63districtQ6zone5">
+                <xs:annotation>
+                    <xs:documentation>1963_Q6 зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63regionX3zona1">
+                <xs:annotation>
+                    <xs:documentation>СК 1963 X3, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63regionX3zona2">
+                <xs:annotation>
+                    <xs:documentation>СК 1963 X3, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63regionX3zona3">
+                <xs:annotation>
+                    <xs:documentation>СК 1963 X3, зона 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63regionX3zona4">
+                <xs:annotation>
+                    <xs:documentation>СК 1963 X3, зона 4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63regionX3zona5">
+                <xs:annotation>
+                    <xs:documentation>СК 1963 X3, зона 5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sk63regionX3zona6">
+                <xs:annotation>
+                    <xs:documentation>СК 1963 X3, зона 6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="usk34sk63usechZona1">
+                <xs:annotation>
+                    <xs:documentation>УСК-34, СК 63 усеч, зона 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="usk34sk63usechZona2">
+                <xs:annotation>
+                    <xs:documentation>УСК-34, СК 63 усеч, зона 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="usk34sk63usechZona2bezsmes">
+                <xs:annotation>
+                    <xs:documentation>УСК-34 СК 63 усеч, зона 2 без смещ +200+400 (Камышинский р-н)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="wgs84Epsg3857">
+                <xs:annotation>
+                    <xs:documentation>WGS 84 (EPSG:3857)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="wgs84Epsg4087">
+                <xs:annotation>
+                    <xs:documentation>WGS 84 (EPSG:4087)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="wgs84Epsg4326">
+                <xs:annotation>
+                    <xs:documentation>WGS 84 (EPSG:4326)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
