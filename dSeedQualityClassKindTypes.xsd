@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/seedQualityClass/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/seedQualityClass/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="https://github.com/SergeyZatula/Reforestation/blob/main/dSeedQualityClassKindTypes.xsd" elementFormDefault="qualified" targetNamespace="https://github.com/SergeyZatula/Reforestation/blob/main/dSeedQualityClassKindTypes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:simpleType name="SeedQualityClassKindEType">
         <xs:annotation>
             <xs:documentation>Класс качества семян</xs:documentation>
