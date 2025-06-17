@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
-    targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.1.2"
-    xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.1.2"
-    xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1">
+    targetNamespace="https://github.com/SergeyZatula/Reforestation/blob/main/attachmentTypes-2.1.2.xsd"
+    xmlns:tns="https://github.com/SergeyZatula/Reforestation/blob/main/attachmentTypes-2.1.2.xsd"
+    xmlns:st="https://github.com/SergeyZatula/Reforestation/blob/main/simpleTypes-2.2.1.xsd">
 
-    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1"
+    <xs:import namespace="https://github.com/SergeyZatula/Reforestation/blob/main/simpleTypes-2.2.1.xsd"
         schemaLocation="simpleTypes-2.2.1.xsd"/>
 
     <xs:simpleType name="AttachmentIdSType">
