@@ -4,7 +4,7 @@
     targetNamespace="https://github.com/SergeyZatula/Reforestation/blob/main/pozvlForestReforestation_v.3.1.1.xsd"
     elementFormDefault="qualified"
     xmlns:st="https://github.com/SergeyZatula/Reforestation/blob/main/simpleTypes-2.2.1.xsd"
-    xmlns:sub="http://rosleshoz.gov.ru/fgis-lk/common/enums/constituentEntity/types/2.1.0"
+    xmlns:sub="https://github.com/SergeyZatula/Reforestation/blob/main/dConstituentEntityKindTypes-2.1.0.xsd"
     xmlns:for="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestry/types/2.2.1"
     xmlns:subfor="http://rosleshoz.gov.ru/fgis-lk/common/enums/districtForestries/types/2.1.3"
     xmlns:rel="http://rosleshoz.gov.ru/fgis-lk/common/enums/relief/types/2.1.0"
