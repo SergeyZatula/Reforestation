@@ -10,7 +10,7 @@
     xmlns:rel="https://github.com/SergeyZatula/Reforestation/blob/main/dReliefKindTypes-2.1.0.xsd"
     xmlns:tr="https://github.com/SergeyZatula/Reforestation/blob/main/dTreeNewKindTypes-2.1.4.xsd"
     xmlns:seed="https://github.com/SergeyZatula/Reforestation/blob/main/dSeedQualityClassKindTypes.xsd"
-    xmlns:attach="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.1.2"
+    xmlns:attach="https://github.com/SergeyZatula/Reforestation/blob/main/attachmentTypes-2.1.2.xsd"
     xmlns:corsis="http://rosleshoz.gov.ru/fgis-lk/common/enums/coordinateSystem/types/2.2.0"
     xmlns:complex="http://rosleshoz.gov.ru/fgis-lk/common/complex/types/2.1.2"
     xmlns:avail="http://rosleshoz.gov.ru/fgis-lk/common/enums/availabilityCategory/types/2.1"
