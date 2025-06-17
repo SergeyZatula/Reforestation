@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"2
-    xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/pozvlForestReforestation/types/3.1.1"
-    targetNamespace="http://rosleshoz.gov.ru/fgis-lk/pozvlForestReforestation/types/3.1.1"
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="https://github.com/SergeyZatula/Reforestation/blob/main/pozvlForestReforestation_v.3.1.1.xsd"
+    targetNamespace="https://github.com/SergeyZatula/Reforestation/blob/main/pozvlForestReforestation_v.3.1.1.xsd"
     elementFormDefault="qualified"
-    xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1"
+    xmlns:st="https://github.com/SergeyZatula/Reforestation/blob/main/simpleTypes-2.2.1.xsd"
     xmlns:sub="http://rosleshoz.gov.ru/fgis-lk/common/enums/constituentEntity/types/2.1.0"
     xmlns:for="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestry/types/2.2.1"
     xmlns:subfor="http://rosleshoz.gov.ru/fgis-lk/common/enums/districtForestries/types/2.1.3"
