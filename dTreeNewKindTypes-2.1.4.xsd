@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/treeNew/types/2.1.4" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/treeNew/types/2.1.4" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="https://github.com/SergeyZatula/Reforestation/blob/main/dTreeNewKindTypes-2.1.4.xsd" elementFormDefault="qualified" targetNamespace="https://github.com/SergeyZatula/Reforestation/blob/main/dTreeNewKindTypes-2.1.4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:simpleType name="TreeNewKindEType">
         <xs:annotation>
             <xs:documentation>Породы деревьев</xs:documentation>
