@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/relief/types/2.1.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/relief/types/2.1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="https://github.com/SergeyZatula/Reforestation/blob/main/dReliefKindTypes-2.1.0.xsd" elementFormDefault="qualified" targetNamespace="https://github.com/SergeyZatula/Reforestation/blob/main/dReliefKindTypes-2.1.0.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:simpleType name="ReliefKindEType">
         <xs:annotation>
             <xs:documentation>Рельеф</xs:documentation>
