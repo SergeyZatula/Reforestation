@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
-    targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1"
-    xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1">
+    targetNamespace="https://github.com/SergeyZatula/Reforestation/blob/main/simpleTypes-2.2.1.xsd"
+    xmlns:tns="https://github.com/SergeyZatula/Reforestation/blob/main/simpleTypes-2.2.1.xsd">
 
     <xs:simpleType name="PositiveDecimalSType">
         <xs:annotation>
