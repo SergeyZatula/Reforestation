@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
-    targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/constituentEntity/types/2.1.0"
-    xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/constituentEntity/types/2.1.0">
+    targetNamespace="https://github.com/SergeyZatula/Reforestation/blob/main/dConstituentEntityKindTypes-2.1.0.xsd"
+    xmlns:tns="https://github.com/SergeyZatula/Reforestation/blob/main/dConstituentEntityKindTypes-2.1.0.xsd">
     <xs:simpleType name="ConstituentEntityKindEType">
         <xs:annotation>
             <xs:documentation>Субъекты Российской Федерации</xs:documentation>
