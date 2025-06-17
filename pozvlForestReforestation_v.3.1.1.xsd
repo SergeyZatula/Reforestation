@@ -8,7 +8,7 @@
     xmlns:for="https://github.com/SergeyZatula/Reforestation/blob/main/dForestryKindTypes-2.2.1.xsd"
     xmlns:subfor="https://github.com/SergeyZatula/Reforestation/blob/main/dDistrictForestriesKindTypes-2.1.3.xsd"
     xmlns:rel="https://github.com/SergeyZatula/Reforestation/blob/main/dReliefKindTypes-2.1.0.xsd"
-    xmlns:tr="http://rosleshoz.gov.ru/fgis-lk/common/enums/treeNew/types/2.1.4"
+    xmlns:tr="https://github.com/SergeyZatula/Reforestation/blob/main/dTreeNewKindTypes-2.1.4.xsd"
     xmlns:seed="http://rosleshoz.gov.ru/fgis-lk/common/enums/seedQualityClass/types/2.1"
     xmlns:attach="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.1.2"
     xmlns:corsis="http://rosleshoz.gov.ru/fgis-lk/common/enums/coordinateSystem/types/2.2.0"
