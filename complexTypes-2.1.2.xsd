@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
-           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1"
-           xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/complex/types/2.1.2"
-           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/complex/types/2.1.2">
+           xmlns:st="https://github.com/SergeyZatula/Reforestation/blob/main/simpleTypes-2.2.1.xsd"
+           xmlns:tns="https://github.com/SergeyZatula/Reforestation/blob/main/complexTypes-2.1.2.xsd"
+           targetNamespace="https://github.com/SergeyZatula/Reforestation/blob/main/complexTypes-2.1.2.xsd">
 
-    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.2.1" schemaLocation="simpleTypes-2.2.1.xsd"/>
+    <xs:import namespace="https://github.com/SergeyZatula/Reforestation/blob/main/simpleTypes-2.2.1.xsd" schemaLocation="simpleTypes-2.2.1.xsd"/>
 
     <xs:group name="ExtRefGroup">
         <xs:annotation>
