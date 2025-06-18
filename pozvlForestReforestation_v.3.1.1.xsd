@@ -13,7 +13,7 @@
     xmlns:attach="https://github.com/SergeyZatula/Reforestation/blob/main/attachmentTypes-2.1.2.xsd"
     xmlns:corsis="https://github.com/SergeyZatula/Reforestation/blob/main/dCoordinateSystemKindTypes-2.2.0.xsd"
     xmlns:complex="https://github.com/SergeyZatula/Reforestation/blob/main/complexTypes-2.1.2.xsd"
-    xmlns:avail="http://rosleshoz.gov.ru/fgis-lk/common/enums/availabilityCategory/types/2.1"
+    xmlns:avail="https://github.com/SergeyZatula/Reforestation/blob/main/dAvailabilityCategoryKindTypes.xsd"
     xmlns:condition="http://rosleshoz.gov.ru/fgis-lk/common/enums/conditionsProjectedMethod/types/2.1"
     xmlns:place="http://rosleshoz.gov.ru/fgis-lk/common/enums/placement/types/2.1"
     xmlns:tfor="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeForest/types/2.1.0"
